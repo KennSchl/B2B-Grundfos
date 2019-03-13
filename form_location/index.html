@@ -1,38 +1,47 @@
 <!doctype html>
-<html lang="en">
+<html lang="dk">
 
 <head>
-  <meta charset="utf-8">
-  <title>WORKING WITH FORMS</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="WORKING WITH FORMS">
-  <meta name="author" content="Rasmus Cederdorff">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <meta charset="utf-8">
+    <title>WORKING WITH FORMS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="WORKING WITH FORMS">
+    <meta name="author" content="Rasmus Cederdorff">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link href="fonts/GrundfosTheSansV2OT-5R.otf" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <h1>WORKING WITH FORMS</h1>
-  </header>
-  <form>
-    <fieldset>
-      <legend>New User</legend>
-      <p>
-        <label for="name">Name </label>
-        <input type="text" name="name" id="name">
-      </p>
-      <p>
-        <label for="name">Email </label>
-        <input type="email" name="email" id="email">
-      </p>
-      <button type="button" name="button" onclick="createUser()" id="createUserBtn">Create user</button>
-    </fieldset>
-  </form>
+    <header>
+        <img src="/img/gheader.png" alt="">
+    </header>
+    <article>
+        <section class="textform">
+            <h1>OPRET BRUGER</h1>
+            <p>En gratis brugerkonto giver adgang til alle Grundfos online services.</p>
+        </section>
+        <section class="regform">
+            <form>
+                <fieldset>
+                    <legend></legend>
+                    <p>
+                        <label for="name">Name </label>
+                        <input type="text" name="name" id="name">
+                    </p>
+                    <p>
+                        <label for="name">Email </label>
+                        <input type="email" name="email" id="email">
+                    </p>
+                    <button type="button" name="button" onclick="createUser()" id="createUserBtn">Create user</button>
+                </fieldset>
+            </form>
 
-  <div id="location"></div>
-  <!-- main js file -->
-  <script src="js/main.js"></script>
+            <div id="location"></div>
+            <!-- main js file -->
+            <script src="js/main.js"></script>
+        </section>
+    </article>
 </body>
 
 </html>

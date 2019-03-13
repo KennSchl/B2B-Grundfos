@@ -1,15 +1,59 @@
 html {
-  color: #333;
-  display: table;
-  font-family: Helvetica, Arial, sans-serif;
-  height: 100%;
-  text-align: center;
-  width: 100%;
-  font-weight: 200;
+    color: #333;
+    display: table;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: GrundfosTheSans;
+    /*a name to be used later*/
+    src: url('/fonts/GrundfosTheSansV2OT-8XB.otf');
+    /*URL to font*/
+}
+
+body {
+    margin: 0 auto;
+    background-image: url(login_background.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+fieldset {
+    border: 0;
+    margin-top: 3em;
 }
 
 h1 {
-  font-size: 2em;
-  font-weight: 300;
-  letter-spacing: 3px;
+    font-family: GrundfosTheSans;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+p {
+    font-size: 30px;
+}
+
+header img {
+    width: 100%;
+}
+
+article {
+    display: flex;
+    margin-left: 7em;
+    margin-right: 7em;
+    max-width: 100%;
+}
+
+.textform {
+    text-align: left;
+    width: 50%;
+    color: #11497b;
+}
+
+.regform {
+    width: 50%;
 }
