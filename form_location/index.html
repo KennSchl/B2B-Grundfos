@@ -19,25 +19,40 @@
     <article>
         <section class="textform">
             <h1>OPRET BRUGER</h1>
-            <p>En gratis brugerkonto giver adgang til alle Grundfos online services.</p>
+            <p>En gratis brugerkonto giver adgang til alle<br>Grundfos online services.</p>
+            <nav>
+                <li>Køb produkter</li>
+                <li>Gem produkter</li>
+                <li>Opret og del projekter</li>
+                <li>Se træningsvideoer</li>
+                <li>Optjen points og køb gaver</li>
+            </nav>
         </section>
         <section class="regform">
             <form>
                 <fieldset>
                     <legend></legend>
+                    <div class="navn">
+                        <p>
+                            <label for="name">Fornavn</label>
+                            <input type="text" name="name" id="name">
+                        </p>
+                        <p class="lastname">
+                            <label for="name">Efternavn</label>
+                            <input type="text" name="lastname" id="lastname">
+                        </p>
+                    </div>
                     <p>
-                        <label for="name">Name </label>
-                        <input type="text" name="name" id="name">
+                        <label for="name">E-mail</label>
+                        <input type="email" name="email" id="email">
                     </p>
                     <p>
-                        <label for="name">Email </label>
-                        <input type="email" name="email" id="email">
+                        <label for="name">Land</label>
+                        <input type="list" name="country" id="location">
                     </p>
                     <button type="button" name="button" onclick="createUser()" id="createUserBtn">Create user</button>
                 </fieldset>
             </form>
-
-            <div id="location"></div>
             <!-- main js file -->
             <script src="js/main.js"></script>
         </section>

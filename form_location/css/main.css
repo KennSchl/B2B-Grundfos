@@ -14,6 +14,13 @@ html {
     /*URL to font*/
 }
 
+@font-face {
+    font-family: GrundfosTheSansReg;
+    /*a name to be used later*/
+    src: url('/fonts/GrundfosTheSansV2OT-5R.otf');
+    /*URL to font*/
+}
+
 body {
     margin: 0 auto;
     background-image: url(login_background.jpg);
@@ -23,18 +30,21 @@ body {
 
 fieldset {
     border: 0;
-    margin-top: 3em;
+    margin: 3em 0 0 0;
 }
 
 h1 {
     font-family: GrundfosTheSans;
     font-size: 40px;
     font-weight: 300;
-    letter-spacing: 3px;
+    margin: 32px 0 8px 0;
 }
 
 p {
-    font-size: 30px;
+    margin: 0 auto;
+    font-family: GrundfosTheSansReg;
+    font-size: 27px;
+    color: #333333;
 }
 
 header img {
@@ -50,10 +60,55 @@ article {
 
 .textform {
     text-align: left;
-    width: 50%;
-    color: #11497b;
+    width: 60%;
 }
 
 .regform {
-    width: 50%;
+    width: 40%;
+}
+
+nav {
+    font-family: GrundfosTheSansReg;
+    font-size: 24px;
+    color: #333;
+    margin: 15px 0 0 8px;
+}
+
+.navn {
+    display: flex;
+    width: 100%;
+}
+
+.navn input {
+    width: 96%;
+}
+
+.lastname {
+    padding-left: 15px;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+input {
+    width: 98%;
+    height: 33px;
+    margin: 0 0 20px 0;
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+label {
+    font-size: 18px;
+    color: #333;
+    float: left;
+}
+
+button {
+    width: 100%;
+    border: solid #999 1px;
+    height: 40px;
+    color: #999999;
+    font-size: 15px;
 }
