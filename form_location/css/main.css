@@ -17,7 +17,7 @@ html {
 @font-face {
     font-family: GrundfosTheSansReg;
     /*a name to be used later*/
-    src: url('/fonts/GrundfosTheSansV2OT-5R.otf');
+    src: url('fonts/GrundfosTheSansV2OT-5R.otf');
     /*URL to font*/
 }
 
