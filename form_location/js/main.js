@@ -5,21 +5,11 @@ console.log(document);
 console.log(window);
 console.log(navigator);
 
-navigator.geolocation.getCurrentPosition(position => {
-    console.log(position);
-    document.querySelector("#location").innerHTML += `
-  <p>Latitude: ${position.coords.latitude}</p>
-  <p>Longitude: ${position.coords.longitude}</p>
-  `;
-});
-
 fetch('http://ip-api.com/json').then(response => {
     return response.json();
 }).then(location => {
     console.log(location);
-    document.querySelector("#location").innerHTML += `
-  <p>${location.country}</p>
-  `;
+    document.querySelector("#country").value = location.country;
 });
 
 document.querySelector('#createUserBtn').addEventListener("click", function () {
