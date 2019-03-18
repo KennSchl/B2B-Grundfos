@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="dk">
-
 <head>
     <meta charset="utf-8">
     <title>WORKING WITH FORMS</title>
@@ -9,14 +8,15 @@
     <meta name="author" content="Rasmus Cederdorff">
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="fonts/GrundfosTheSansV2OT-5R.otf" rel="stylesheet">
         <script src="js/main.js"></script>
 </head>
-
 <body>
     <header>
         <img src="img/gheader.png" alt="">
     </header>
+    <div id="bd"></div>
     <article>
         <section class="textform">
             <h1>OPRET BRUGER</h1>
@@ -42,12 +42,17 @@
                             <input type="text" name="lastname" id="lastname" required>
                         </p>
                     </div>
-    <label for="email"><p>Email</p></label>
+    <label for="email"><p>E-mail</p></label>
     <input type="text" name="email" required>
       
-    <label for="psw"><p>Password</p></label>
-    <input type="password" name="psw" value="password" id="password" required>
-      <input type="checkbox" onclick="myFunction()" id="pw">
+    <label for="psw"><p>Vælg adgangskode</p></label>
+      <div id="pwflex">
+    <input type="password" name="psw" id="password" required>
+          <button type="checkbox" onclick="myFunction()" id="pw">
+          <i class="fas fa-eye-slash"></i>
+<!--<i class="far fa-eye"></i> -->
+          </button>
+          </div>
                               <label for="country"><p>Land</p></label>
                         <select id="country" required>
    <option value='Ascension Island'>Ascension Island</option>
@@ -298,12 +303,14 @@
     <option value='Zambia'>Zambia</option>
     <option value='Zimbabwe'>Zimbabwe</option>    
 </select>
-    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-    <button type="submit" class="registerbtn">Register</button>
+    <button type="submit" class="registerbtn">OPRET BRUGER</button>
+      <div class="tc">
+      <input type="checkbox" name="checkbox" id="checkbox_id" value="value" required>
+<label for="checkbox_id">Ja, jeg ønsker at modtage målrettede oplysninger om nyheder, værktøjer, produkter, applikationer, arrangementer og kampagner fra Grundfos Holding A/S og Grundfos DK A/S (salgsselskab), Martin Bachs Vej 3, 8850, Bjerringbro (samlet kaldet "Grundfos"), og jeg accepterer at blive kontaktet pr. e-mail, sms, telefon, push-besked eller brev vedrørende sådanne formål. Grundfos må analysere min adfærd og oprette en profil baseret på min brug af forskellige Grundfos-websider, -applikationer eller -værktøjer med henblik på at sende mig målrettet information.<br><br>Jeg giver samtykke til behandling af de personoplysninger, jeg har givet ovenfor, samt oprettelse og brug af en profil til sådanne formål. 
+Du kan til enhver tid trække dit samtykke tilbage. En sådan tilbagetrækning påvirker ikke lovligheden af den behandling, der blev foretaget inden tilbagetrækning af samtykket. Du har også ret til at gøre indsigelse mod brug af dine personoplysninger til direkte markedsføring, herunder profilering. Yderligere information om dine personoplysninger og dine rettigheder fremgår af vores  Vilkår og betingelser og  meddelelse om databeskyttelse</label></div>
   </div>
 </form>
         </section>
     </article>
 </body>
-
 </html>
