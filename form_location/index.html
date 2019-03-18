@@ -10,11 +10,13 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
     <link href="fonts/GrundfosTheSansV2OT-5R.otf" rel="stylesheet">
-</head>
+        <script src="js/main.js"></script>
+<script src="http://code.jquery.com/jquery--3.3.1.min.js"
+  type="text/javascript"></script></head>
 
 <body>
     <header>
-        <img src="../../img/gheader.png" alt="">
+        <img src="img/gheader.png" alt="">
     </header>
     <article>
         <section class="textform">
@@ -48,7 +50,7 @@
                     </p>
                     <p>
                         <label for="name">Adgangskode</label>
-                        <input type="password" name="pw" id="pw">
+                        <input type="password" name="password" id="password">
                     </p>
                     <p>
                         <label for="country">Land</label>
@@ -302,14 +304,13 @@
     <option value='Zimbabwe'>Zimbabwe</option>    
 </select>
                     </p>
-                    <button type="button" name="button" onclick="createUser()" id="createUserBtn">OPRET BRUGER</button>
+                    <button type="button" name="button" onclick="createUser()" id="createUserBtn" disabled>OPRET BRUGER</button>
                 </fieldset>
+            <p class="tc">Ja, jeg ønsker at modtage målrettede oplysninger om nyheder, værktøjer, produkter, applikationer, arrangementer og kampagner fra Grundfos Holding A/S og Grundfos DK A/S (salgsselskab), Martin Bachs Vej 3, 8850, Bjerringbro (samlet kaldet "Grundfos"), og jeg accepterer at blive kontaktet pr. e-mail, sms, telefon, push-besked eller brev vedrørende sådanne formål. Grundfos må analysere min adfærd og oprette en profil baseret på min brug af forskellige Grundfos-websider, -applikationer eller -værktøjer med henblik på at sende mig målrettet information. Jeg giver samtykke til behandling af de personoplysninger, jeg har givet ovenfor, samt oprettelse og brug af en profil til sådanne formål. 
+Du kan til enhver tid trække dit samtykke tilbage. En sådan tilbagetrækning påvirker ikke lovligheden af den behandling, der blev foretaget inden tilbagetrækning af samtykket. Du har også ret til at gøre indsigelse mod brug af dine personoplysninger til direkte markedsføring, herunder profilering. Yderligere information om dine personoplysninger og dine rettigheder fremgår af vores  Vilkår og betingelser og  meddelelse om databeskyttelse</p>
             </form>
-
         </section>
     </article>
-    <!-- main js file -->
-    <script src="js/main.js"></script>
 </body>
 
 </html>
