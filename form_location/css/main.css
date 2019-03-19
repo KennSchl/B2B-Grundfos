@@ -227,10 +227,19 @@ hr {
   cursor: pointer;
   width: 100%;
 }
+.regbtn {
+  background-color: #f9f9f9;
+  color: white;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
 
 .registerbtn:hover {
     background-color: #3f9b42;
 }
+
 
 /* Add a blue text color to links */
 a {
@@ -252,7 +261,7 @@ a {
     cursor: pointer;
 }
 
-/* GLYF 
+/* GLYF
 
 .glyphicon {
     position: relative;
