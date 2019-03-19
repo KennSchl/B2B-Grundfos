@@ -313,3 +313,7 @@ a {
   top: 9px;
   left: -10px;
 }
+
+li a {
+    color: #333;
+}
