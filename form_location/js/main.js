@@ -38,9 +38,16 @@ function createUser() {
 
 function myFunction() {
   let x = document.getElementById("password");
-  if (x.type === "password") {
+    let eye = document.getElementById("eye");
+
+  if (x.type === "password"){
+    eye.classList.remove("fa-eye-slash");
+    eye.classList.add("fa-eye");
     x.type = "text";
   } else {
     x.type = "password";
+    eye.classList.add("fa-eye-slash");
+          eye.classList.remove("fa-eye");
+
   }
 }

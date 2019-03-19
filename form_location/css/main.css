@@ -242,13 +242,16 @@ a {
     display: flex;
 }
 
-#pwflex button {
+#pwflex div {
+  background: #dedede;
     height: 30px;
     border: solid #a3a3a3 .1px;
     border-left: none;
+    padding: .4em;
+    width: 35px;
 }
 
-#pwflex button:hover {
+#pwflex div:hover {
     cursor: pointer;
 }
 
