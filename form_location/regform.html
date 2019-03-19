@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="dk">
+<html lang="da">
 <head>
     <meta charset="utf-8">
     <title>WORKING WITH FORMS</title>
@@ -16,21 +16,22 @@
     <header>
         <a href="/index.html">
         <img src="img/gheader.png" alt=""></a>    </header>
-    <div id="bd"></div>
     <article>
         <section class="textform">
             <h1>OPRET BRUGER</h1>
             <p>En gratis brugerkonto giver adgang til alle<br>Grundfos online services.</p>
             <nav>
+                <ul>
                 <li>Køb produkter</li>
                 <li>Gem produkter</li>
                 <li>Opret og del projekter</li>
                 <li>Se træningsvideoer</li>
                 <li>Optjen points og køb gaver</li>
+                </ul>
             </nav>
         </section>
         <section class="regform">
-<form>
+<form action="nudge.html">
   <div class="container">
                           <div class="navn">
                         <p>
@@ -42,19 +43,19 @@
                             <input type="text" name="lastname" id="lastname" required>
                         </p>
                     </div>
-    <label for="email"><p>E-mail</p></label>
+    <label for="email">E-mail</label>
     <input type="text" name="email" required>
       
-    <label for="psw"><p>Vælg adgangskode</p></label>
+    <label for="psw">Vælg adgangskode</label>
       <div id="pwflex">
     <input type="password" name="psw" id="password" required>
-          <div type="checkbox" onclick="myFunction()" id="pw">
+          <div onclick="myFunction()" id="pw">
           <i id="eye" class="fas fa-eye-slash"></i>
 <!--<i class="far fa-eye"></i> -->
           </div>
           </div>
-                              <label for="country"><p>Land</p></label>
-                        <select id="country" required>
+  <label for="country">Land</label>
+    <select id="country" required>
    <option value='Ascension Island'>Ascension Island</option>
     <option value='Andorra'>Andorra</option>
     <option value='United Arab Emirates'>United Arab Emirates</option>
@@ -312,6 +313,6 @@
   </div>
 </form>
         </section>
-    </article>
-</body>
-</html>
+        </article>
+    </body>
+    </html>
