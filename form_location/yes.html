@@ -2,26 +2,56 @@
 <html lang="da">
 <head>
     <meta charset="utf-8">
-    <title>WORKING WITH FORMS</title>
+    <title>Registrering komplet - Grundfos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="WORKING WITH FORMS">
+    <meta name="description" content="Opret en ny brugerkonto hos Grundfos. Med en MyGrundfos konto kan du gemme, dele og oprette projekter, produkter og mere meget.">
     <meta name="author" content="Rasmus Cederdorff">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="fonts/GrundfosTheSansV2OT-5R.otf" rel="stylesheet">
         <script src="js/main.js"></script>
+    <style>
+        .displaynone {
+            visibility: hidden;
+        }
+        
+                .fadeout {
+            animation-name: fadeout;
+            animation-delay: 5s;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+
+        }
+
+        
+        button {
+            animation-name: fadeout;
+            animation-delay: 1s;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+        
+        @keyframes fadeout {
+            0% {
+                opacity: 1;
+            }
+                        100% {
+                opacity: 0;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <a href="/">
+        <a href="./">
         <img src="img/gheader.png" alt=""></a>
     </header>
     <div id="bd"></div>
     <article>
         <section class="textform welcome">
             <h1>VELKOMMEN</h1>
-            <p>Du er nu logget ind, men husk at bekræfte din e-mail indenfor 24 timer. Her er et par genveje du kan bruge:</p>
+            <p>Du er nu logget ind, men husk at bekræfte din e-mail indenfor 24 timer. Her er nogle genveje:</p>
             <nav>
                 <ul>
               <li><a href="#">Min konto</a></li>
@@ -35,8 +65,10 @@
         <section class="regform">
 <form action="index.html">
 <div class="container">
+    <div class="fadeout">
     <h2>DIN PROFIL ER KOMPLET</h2>
-            <p class="pp">Du har nu tilføjet jobrolle og interesse. Du kan altid ændre det i dine Indstillinger.</p>
+            <p class="pp">Du har nu tilføjet jobrolle og interesse. Du kan altid ændre det i dine Indstillinger.</p></div>
+    <div class="displaynone">
     <label for="jobs">Jobroller</label>
                         <select id="jobs" required>
     <option value=''></option>
@@ -62,7 +94,8 @@
     <option value='vand'>Vandforsyning</option>
     <option value='spildevand'>Spildevand</option>
 </select>
-    <button type="submit" class="registerbtn">INDSTILLINGER</button>
+    </div>
+    <button type="submit" class="registerbtn">TILFØJET</button>
   </div>
 </form>
         </section>
